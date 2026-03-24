@@ -153,6 +153,9 @@
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
+            scale: 6,
+            // 移動端也可設定
+            scaleMobile: 8,
             /* 深夜配色參數 */
             skyColor: 0x01050a,      // 極暗藍色天空
             cloudColor: 0x272d39,    // 暗灰藍色雲朵
@@ -162,6 +165,16 @@
             sunlightColor: 0x0,      // 關閉陽光
             speed: 2.5               // 緩慢平穩的巡航感
         })
+
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.glass-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
 </html>
