@@ -16,10 +16,9 @@
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="star-map-bg"></div>
     <header class="glass-header">
         <nav class="container nav-container">
             <div class="logo">
@@ -36,9 +35,19 @@
 
     <main>
         <section id="hero">
+            <div id="vanta-bg"></div>
+            <div id="hud-overlay"></div>
+            <div class="hud-bracket-hero top-left"></div>
+            <div class="hud-bracket-hero top-right"></div>
+            <div class="hud-bracket-hero bottom-left"></div>
+            <div class="hud-bracket-hero bottom-right"></div>
+
             <div class="container hero-content">
                 <h1 class="hero-title">ALNAIR STUDIO</h1>
-                <p class="mission">The ultimate AI-driven navigation system for pilot career progression worldwide.</p>
+                <p class="mission">> INITIALIZING AI NAVIGATION SYSTEM...</p>
+                <div class="status-bar">
+                    <span class="dot"></span> SYSTEM ONLINE | ALT: 35,000 FT | HEADING: 270°
+                </div>
                 <div class="cta-group">
                     <a href="#products" class="btn btn-glow">System Engage <i class="fa-solid fa-plane-departure"></i></a>
                 </div>
@@ -133,5 +142,26 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script>
+        VANTA.CLOUDS({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            /* 深夜配色參數 */
+            skyColor: 0x01050a,      // 極暗藍色天空
+            cloudColor: 0x272d39,    // 暗灰藍色雲朵
+            cloudShadowColor: 0x0,   // 黑色陰影
+            sunColor: 0x0,           // 關閉太陽
+            sunGlareColor: 0x0,      // 關閉反光
+            sunlightColor: 0x0,      // 關閉陽光
+            speed: 2.5               // 緩慢平穩的巡航感
+        })
+    </script>
 </body>
 </html>
