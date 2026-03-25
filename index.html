@@ -11,18 +11,19 @@
 
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
-    <!-- Google Fonts - Inter for readability -->
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="apple-touch-icon" href="./logo.png">
+    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="glass-header transparent">
         <nav class="container nav-container">
             <div class="logo">
-                <img src="logo.png" alt="Alnair Studio Logo" height="40">
+                <img src="./logo.png" alt="Alnair Studio Logo" height="40">
+                <span class="logo-text">ALNAIR STUDIO</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#products">Products</a></li>
@@ -34,47 +35,76 @@
 
     <main>
         <section id="hero">
+            <div id="vanta-bg"></div>
+            <div id="hud-overlay"></div>
+            <div class="hud-bracket-hero top-left"></div>
+            <div class="hud-bracket-hero top-right"></div>
+            <div class="hud-bracket-hero bottom-left"></div>
+            <div class="hud-bracket-hero bottom-right"></div>
+
             <div class="container hero-content">
-                <h1>Alnair Studio</h1>
-                <p class="mission">To be the ultimate AI-driven navigation system for pilot career progression worldwide.</p>
+                <h1 class="hero-title">ALNAIR STUDIO</h1>
+                <p class="mission">> INITIALIZING AI NAVIGATION SYSTEM...</p>
+                <div class="status-bar">
+                    <span class="dot"></span> SYSTEM ONLINE | ALT: 35,000 FT | HEADING: 270°
+                </div>
                 <div class="cta-group">
-                    <a href="#products" class="btn btn-primary">Our Products</a>
+                    <a href="#products" class="btn btn-glow">System Engage <i class="fa-solid fa-plane-departure"></i></a>
                 </div>
             </div>
         </section>
 
         <section id="products" class="container">
-            <h2 class="section-title">Innovative AI Solutions</h2>
+            <div class="section-header">
+                <h2 class="section-title">Innovative Solutions</h2>
+                <div class="radar-line"></div>
+            </div>
             <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-placeholder">CaptainAI</div>
+                <!-- CaptainAI Card -->
+                <div class="product-card captain-ai">
+                    <div class="hud-bracket top-left"></div>
+                    <div class="hud-bracket top-right"></div>
+                    <div class="hud-bracket bottom-left"></div>
+                    <div class="hud-bracket bottom-right"></div>
+                    
+                    <div class="card-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
                     <h3>CaptainAI</h3>
                     <p>Have a senior check airman with you anytime, anywhere, providing the "Golden Answer" for your training.</p>
-                    <a href="#" class="btn btn-outline">Coming Soon</a>
+                    <a href="#" class="btn btn-outline cyan">Initialize <i class="fa-solid fa-angle-right"></i></a>
                 </div>
-                <div class="product-card">
-                    <div class="product-placeholder">GateNight</div>
+
+                <!-- GateNight Card -->
+                <div class="product-card gate-night">
+                    <div class="route-map-bg"></div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
                     <h3>GateNight</h3>
                     <p>An identity-based social and short-term interaction app for aviation professionals, centered around "intersecting itineraries."</p>
-                    <a href="#" class="btn btn-outline">Coming Soon</a>
+                    <a href="#" class="btn btn-outline violet">Connect <i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="bg-light">
-            <div class="container">
+        <section id="about" class="container">
+            <div class="section-header">
                 <h2 class="section-title">About Alnair Studio</h2>
-                <div class="about-content">
-                    <p>We are dedicated to revolutionizing the aviation industry through advanced AI technology. Our mission is to empower pilots and aviation professionals at every stage of their career, providing the tools and community needed for excellence.</p>
-                </div>
+                <div class="radar-line"></div>
+            </div>
+            <div class="glass-panel about-content">
+                <p>We are dedicated to revolutionizing the aviation industry through advanced AI technology. Our mission is to empower pilots and aviation professionals at every stage of their career, providing the tools and community needed for excellence.</p>
+                <p class="tagline text-accent-2">"Designed by Pilots, Driven by AI"</p>
             </div>
         </section>
 
         <section id="contact" class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-card">
-                <p>Have questions or want to collaborate? Reach out to us.</p>
-                <a href="mailto:service@alnair-studio.com" class="btn btn-primary">Email Us</a>
+            <div class="glass-panel contact-card text-center">
+                <i class="fa-solid fa-radar text-accent-1 text-4xl mb-4"></i>
+                <h2 class="section-title">Comm Link Open</h2>
+                <p>Have questions or want to collaborate? Establish a secure connection.</p>
+                <a href="mailto:service@alnair-studio.com" class="btn btn-glow mt-4">Transmit Message</a>
             </div>
         </section>
     </main>
@@ -83,20 +113,23 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <img src="logo.png" alt="Alnair Studio" height="30">
-                    <p>Empowering pilots worldwide.</p>
+                    <div class="logo">
+                        <img src="./logo.png" alt="Alnair Studio" height="30">
+                        <span class="logo-text">ALNAIR STUDIO</span>
+                    </div>
+                    <p class="tagline">Designed by Pilots, Driven by AI</p>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>Comms</h4>
                     <p><a href="mailto:service@alnair-studio.com">service@alnair-studio.com</a></p>
                 </div>
                 <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons flex gap-6">
-                        <a href="https://x.com/StudioAlna70798" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/alnair.studio/" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.threads.com/@alnair.studio" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-threads"></i></a>
-                        <a href="https://www.linkedin.com/company/alnair-studio/" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <h4>Frequency</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/StudioAlna70798" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/alnair.studio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.threads.com/@alnair.studio" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.linkedin.com/company/alnair-studio/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -109,5 +142,39 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script>
+        VANTA.CLOUDS({
+            el: "#vanta-bg",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 6,
+            // 移動端也可設定
+            scaleMobile: 8,
+            /* 深夜配色參數 */
+            skyColor: 0x01050a,      // 極暗藍色天空
+            cloudColor: 0x272d39,    // 暗灰藍色雲朵
+            cloudShadowColor: 0x0,   // 黑色陰影
+            sunColor: 0x0,           // 關閉太陽
+            sunGlareColor: 0x0,      // 關閉反光
+            sunlightColor: 0x0,      // 關閉陽光
+            speed: 2.5               // 緩慢平穩的巡航感
+        })
+
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.glass-header');
+            if (window.scrollY > 20) {
+                header.classList.remove('transparent');
+            } else {
+                header.classList.add('transparent');
+            }
+        });
+    </script>
 </body>
 </html>
