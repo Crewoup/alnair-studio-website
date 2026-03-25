@@ -493,6 +493,17 @@ footer {
 }
 
 /* --- Legal Pages --- */
+.legal-page main.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .legal-page main.container {
+        max-width: 80vw;
+    }
+}
+
 .legal-page main h1 { margin-top: 2rem; }
 .legal-page main h2 { margin-top: 2rem; }
 .legal-page main p { margin-bottom: 1rem; }
