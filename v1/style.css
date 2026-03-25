@@ -158,20 +158,20 @@ h1, h2, h3, h4 {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.glass-header.scrolled {
     z-index: 1000;
     background: rgba(10, 15, 30, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.glass-header.transparent {
+    z-index: 5;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid transparent;
 }
 
 .logo img {

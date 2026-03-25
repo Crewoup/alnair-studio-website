@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="glass-header">
+    <header class="glass-header transparent">
         <nav class="container nav-container">
             <div class="logo">
                 <img src="./logo.png" alt="Alnair Studio Logo" height="40">
@@ -170,9 +170,9 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.glass-header');
             if (window.scrollY > 20) {
-                header.classList.add('scrolled');
+                header.classList.remove('transparent');
             } else {
-                header.classList.remove('scrolled');
+                header.classList.add('transparent');
             }
         });
     </script>
