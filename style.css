@@ -280,7 +280,7 @@ section.container {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.2rem;
     color: var(--accent-cyan);
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 1.5rem auto 1rem;
     opacity: 0.8;
 }
@@ -419,6 +419,12 @@ section.container {
     margin-top: 1.5rem;
     font-weight: 600;
 }
+
+.tagline-mb {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
 
 .mb-4 { margin-bottom: 1rem; }
 .mt-4 { margin-top: 1rem; }
